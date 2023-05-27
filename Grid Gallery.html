@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="wow-animation desktop landscape rd-navbar-static-linked" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Site Title-->
+    <title>Grid Gallery</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <script type="text/javascript" async="" src="Grid%20Gallery_files/ec.js"></script><script type="text/javascript" async="" src="Grid%20Gallery_files/analytics.js"></script><script async="" src="Grid%20Gallery_files/gtm.js"></script><script src="Grid%20Gallery_files/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script><script src="Grid%20Gallery_files/4o300efCt-CXoq1JEC-sVReFz48.js"></script><link rel="icon" href="https://livedemo00.template-help.com/wt_62309/images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="Grid%20Gallery_files/css.css">
+    <link rel="stylesheet" href="Grid%20Gallery_files/style.css">
+		<!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+  <link rel="stylesheet" href="data:text/css;charset=utf-8;base64,Y2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gewogIGRpc3BsYXk6IGJsb2NrOwogIGJhY2tncm91bmQ6ICM0NTQ4NGQ7CiAgY29sb3I6ICNmZmY7CiAgbGluZS1oZWlnaHQ6IDEuNDU7CiAgcG9zaXRpb246IGZpeGVkOwogIHotaW5kZXg6IDkwMDAwMDAwOwogIHRvcDogMDsKICBsZWZ0OiAwOwogIHJpZ2h0OiAwOwogIHBhZGRpbmc6IC41ZW0gMWVtOwogIHRleHQtYWxpZ246IGNlbnRlcjsKICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOwogICAgIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgIC1tcy11c2VyLXNlbGVjdDogbm9uZTsKICAgICAgICAgIHVzZXItc2VsZWN0OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXVtkYXRhLXZpc2liaWxpdHk9ImhpZGRlbiJdIHsKICBkaXNwbGF5OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1tZXNzYWdlIHsKICBkaXNwbGF5OiBibG9jazsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gYSB7CiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7CiAgY29sb3I6ICNlYmViZjQ7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6aG92ZXIsCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6YWN0aXZlIHsKICBjb2xvcjogI2RiZGJlYjsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gY2xvdWRmbGFyZS1hcHAtY2xvc2UgewogIGRpc3BsYXk6IGJsb2NrOwogIGN1cnNvcjogcG9pbnRlcjsKICBmb250LXNpemU6IDEuNWVtOwogIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICByaWdodDogLjRlbTsKICB0b3A6IC4zNWVtOwogIGhlaWdodDogMWVtOwogIHdpZHRoOiAxZW07CiAgbGluZS1oZWlnaHQ6IDE7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGNsb3VkZmxhcmUtYXBwLWNsb3NlOmFjdGl2ZSB7CiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTsKICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1jbG9zZTpob3ZlciB7CiAgb3BhY2l0eTogLjllbTsKICBjb2xvcjogI2ZmZjsKfQo="></head>
+  <body class="">
+    <!-- Page-->
+    <div class="page text-center">
+      <!-- Page Head-->
+      <header class="page-header">
+        <!-- RD Navbar Transparent-->
+        <div class="rd-navbar-wrap" style="height: 174px;">
+          <nav class="rd-navbar rd-navbar-top-panel rd-navbar-default rd-navbar-with-panel rd-navbar-original rd-navbar-static rd-navbar--is-stuck" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="75px" data-lg-stick-up-offset="105px" data-lg-auto-height="true" data-auto-height="false">
+            <div class="rd-navbar-inner toggle-original-elements">
+              <!-- RD Navbar Top Panel-->
+              <div class="rd-navbar-top-panel toggle-original-elements">
+                <div class="left-side">
+                  <!-- Contact Info-->
+                  <address class="contact-info text-left">
+                    <div class="reveal-inline-block">
+                      <div class="unit unit-middle unit-horizontal unit-spacing-xs unit-xs-top">
+                        <div class="unit-left"><span class="icon icon-sm-size-1 text-white mdi mdi-phone"></span></div>
+                        <div class="unit-body">
+                          <div class="p"><a href="callto:#" class="text-alto">1-800-1234-567</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reveal-inline-block">
+                      <div class="unit unit-middle unit-horizontal unit-spacing-xs unit-xs-top">
+                        <div class="unit-left"><span class="icon icon-sm-size-1 text-white mdi mdi-map-marker"></span></div>
+                        <div class="unit-body">
+                          <div class="p"><a href="https://livedemo00.template-help.com/wt_62309/contacts.html" class="text-alto">2130 Fulton Street San Diego, CA 94117-1080 USA</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reveal-inline-block">
+                      <div class="unit unit-middle unit-horizontal unit-spacing-xs unit-xs-top">
+                        <div class="unit-left"><span class="icon icon-sm-size-1 text-white mdi mdi-email-outline"></span></div>
+                        <div class="unit-body">
+                          <div class="p"><a href="mailto:#" class="text-alto">info@demolink.org</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+                <div class="right-side">
+                  <ul class="list-inline list-inline-sm">
+                    <li><a href="#" class="icon fa fa-facebook icon-silver"></a></li>
+                    <li><a href="#" class="icon fa fa-twitter icon-silver"></a></li>
+                    <li><a href="#" class="icon fa fa-google-plus icon-silver"></a></li>
+                    <li><a href="#" class="icon fa fa-instagram icon-silver"></a></li>
+                    <li><a href="#" class="icon fa fa-rss icon-silver"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="rd-navbar-bottom-panel">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap" class="rd-navbar-toggle toggle-original"><span></span></button>
+                  <!-- RD Navbar Top Panel Toggle-->
+                  <button data-rd-navbar-toggle=".rd-navbar, .rd-navbar-top-panel" class="rd-navbar-top-panel-toggle toggle-original"><span></span></button>
+                  <!-- Navbar Brand-->
+                  <div class="rd-navbar-brand"><a href="https://livedemo00.template-help.com/wt_62309/index.html"><img src="Grid%20Gallery_files/brand-logo-37x26.png" alt="" width="37" height="26"><span>Joseph Parker</span></a></div>
+                </div>
+                <div class="rd-navbar-menu-wrap">
+                  <div class="rd-navbar-nav-wrap toggle-original-elements">
+                    <div class="rd-navbar-mobile-scroll">
+                      <div class="form-search-wrap">
+                        <!-- RD Search Form-->
+                        <form action="search-results.html" method="GET" class="form-search rd-search">
+                          <div class="form-group">
+                            <label for="rd-navbar-form-search-widget" class="form-label form-search-label form-label-sm rd-input-label">Search</label>
+                            <input id="rd-navbar-form-search-widget" type="text" name="s" autocomplete="off" class="form-search-input input-sm form-control form-control-gray-lightest input-sm">
+                          </div>
+                          <button type="submit" class="form-search-submit"><span class="fa fa-search"></span></button>
+                        </form>
+                      </div>
+                      <!-- RD Navbar Nav-->
+                      <ul class="rd-navbar-nav">
+                        <li><a href="https://livedemo00.template-help.com/wt_62309/index.html"><span>Home</span></a>
+                        </li>
+                        <li class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="#"><span>About</span></a><span class="rd-navbar-submenu-toggle"></span>
+                          <ul class="rd-navbar-dropdown">
+                            <li><a href="https://livedemo00.template-help.com/wt_62309/overview.html"><span class="text-middle">Overview</span></a>
+                            </li>
+                            <li><a href="https://livedemo00.template-help.com/wt_62309/testimonials.html"><span class="text-middle">Testimonials</span></a>
+                            </li>
+                            <li><a href="https://livedemo00.template-help.com/wt_62309/press.html"><span class="text-middle">Press</span></a>
+                            </li>
+                            <li><a href="https://livedemo00.template-help.com/wt_62309/faq-page.html"><span class="text-middle">FAQ Page</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="https://livedemo00.template-help.com/wt_62309/programs.html"><span>Programs</span></a>
+                        </li>
+                        <li><a href="https://livedemo00.template-help.com/wt_62309/events.html"><span>Events</span></a>
+                        </li>
+                        <li class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="https://livedemo00.template-help.com/wt_62309/classic-blog.html"><span>Blog</span></a><span class="rd-navbar-submenu-toggle"></span>
+                          <ul class="rd-navbar-dropdown">
+                            <li><a href="https://livedemo00.template-help.com/wt_62309/classic-blog.html"><span class="text-middle">Classic Blog</span></a>
+                            </li>
+                            <li><a href="https://livedemo00.template-help.com/wt_62309/grid-blog.html"><span class="text-middle">Grid Blog</span></a>
+                            </li>
+                            <li><a href="https://livedemo00.template-help.com/wt_62309/masonry-blog.html"><span class="text-middle">Masonry Blog</span></a>
+                            </li>
+                            <li><a href="https://livedemo00.template-help.com/wt_62309/modern-blog.html"><span class="text-middle">Modern Blog</span></a>
+                            </li>
+                            <li><a href="https://livedemo00.template-help.com/wt_62309/post-page.html"><span class="text-middle">Post Page</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="active rd-navbar--has-megamenu rd-navbar-submenu"><a href="#"><span>Pages</span></a><span class="rd-navbar-submenu-toggle"></span>
+                          <div class="rd-navbar-megamenu">
+                            <div class="row">
+                              <ul class="col-md-3">
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/404-page.html"><span class="text-middle">404 Page</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/503-page.html"><span class="text-middle">503 Page</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/coming-soon.html"><span class="text-middle">Coming Soon</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/search-results.html"><span class="text-middle">Search Results</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/site-map.html"><span class="text-middle">Sitemap</span></a></li>
+                              </ul>
+                              <ul class="col-md-3">
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/terms-of-use.html"><span class="text-middle">Terms of Use</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/team.html"><span class="text-middle">Team</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/team-member-profile.html"><span class="text-middle">Team Member Profile</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/events-calendar.html"><span class="text-middle">Events Calendar</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/single-event.html"><span class="text-middle">Single Event</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/testimonials.html"><span class="text-middle">Testimonials</span></a></li>
+                              </ul>
+                              <ul class="col-md-3">
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/grid-gallery.html"><span class="text-middle">Grid Gallery</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/masonry-gallery.html"><span class="text-middle">Masonry Gallery</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/cobbles-gallery.html"><span class="text-middle">Cobbles Gallery</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/gallery-without-padding.html"><span class="text-middle">Gallery Without Padding</span></a></li>
+                              </ul>
+                              <ul class="col-md-3">
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/forms.html"><span class="text-middle">Forms</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/buttons.html"><span class="text-middle">Buttons</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/grid.html"><span class="text-middle">Grid</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/progress-bars.html"><span class="text-middle">Progress Bars</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/tables.html"><span class="text-middle">Tables</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/tabs-&amp;-accordions.html"><span class="text-middle">Tabs</span></a></li>
+                                <li><a href="https://livedemo00.template-help.com/wt_62309/typography.html"><span class="text-middle">Typography</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li><a href="https://livedemo00.template-help.com/wt_62309/contacts.html"><span>Contacts</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- RD Navbar Search-->
+                  <div class="rd-navbar-search rd-navbar-search-top-panel toggle-original-elements"><a data-rd-navbar-toggle=".rd-navbar-inner,.rd-navbar-search" href="#" class="rd-navbar-search-toggle mdi toggle-original"><span></span></a>
+                    <form action="search-results.html" data-search-live="rd-search-results-live" method="GET" class="rd-navbar-search-form search-form-icon-right rd-search">
+                      <div class="form-group">
+                        <label for="rd-navbar-search-form-input" class="form-label rd-input-label">Type and hit enter...</label>
+                        <input id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off" class="rd-navbar-search-form-input form-control form-control-gray-lightest">
+                      </div>
+                      <div id="rd-search-results-live" class="rd-search-results-live"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- Modern Breadcrumbs-->
+        <div class="section-height-800 breadcrumb-modern text-center breadcrumbs-center">
+          <div class="shell section-bottom-30">
+            <div class="veil reveal-md-block">
+              <h1 class="text-bold">Grid Gallery</h1>
+            </div>
+            <ul class="list-inline list-inline-with-arrows p">
+              <li><a href="https://livedemo00.template-help.com/wt_62309/index.html" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">Pages</a></li>
+              <li>Grid Gallery
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Page Contents-->
+      <section class="section-90 section-md-top-120 section-md-bottom-111">
+        <div class="shell-fluid">
+          <div class="isotope-wrap">
+            <div class="row">
+              <!-- Isotope Filters-->
+              <div class="col-lg-12">
+                <div class="isotope-filters isotope-filters-horizontal">
+                  <ul class="list-inline list-inline-sm">
+                    <li class="veil-md">
+                      <p>Choose your category:</p>
+                    </li>
+                    <li class="section-relative">
+                      <button data-custom-toggle="isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-sm btn-default">Filter<span class="caret"></span></button>
+                      <ul id="isotope-1" class="list-sm-inline isotope-filters-list">
+                        <li><a data-isotope-filter="*" data-isotope-group="gallery" href="#" class="active">All Types</a></li>
+                        <li><a data-isotope-filter="Type 1" data-isotope-group="gallery" href="#" class="">Type 1</a></li>
+                        <li><a data-isotope-filter="Type 2" data-isotope-group="gallery" href="#" class="">Type 2</a></li>
+                        <li><a data-isotope-filter="Type 3" data-isotope-group="gallery" href="#" class="">Type 3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Isotope Content-->
+              <div class="col-lg-12 offset-top-34">
+                <div data-isotope-layout="fitRows" data-isotope-group="gallery" class="isotope isotope--loaded" style="position: relative; height: 924.351px;">
+                  <div data-photo-swipe-gallery="gallery" class="row">
+                    <div data-filter="Type 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item" style="position: absolute; left: 0px; top: 0px;"><a class="thumbnail-custom" data-photo-swipe-item="" data-size="1200x800" href="https://livedemo00.template-help.com/wt_62309/images/gallery/originals/gallery-1_original-1200x800.jpg">
+                        <figure><img src="Grid%20Gallery_files/gallery-grid-1-570x400.jpg" alt="" class="img-responsive" width="570" height="400">
+                        </figure></a>
+                    </div>
+                    <div data-filter="Type 3" class="col-xs-12 col-sm-6 col-md-4 isotope-item" style="position: absolute; left: 426px; top: 0px;"><a class="thumbnail-custom" data-photo-swipe-item="" data-size="1200x800" href="https://livedemo00.template-help.com/wt_62309/images/gallery/originals/gallery-2_original-1200x800.jpg">
+                        <figure><img src="Grid%20Gallery_files/gallery-grid-2-570x400.jpg" alt="" class="img-responsive" width="570" height="400">
+                        </figure></a>
+                    </div>
+                    <div data-filter="Type 2" class="col-xs-12 col-sm-6 col-md-4 isotope-item" style="position: absolute; left: 852px; top: 0px;"><a class="thumbnail-custom" data-photo-swipe-item="" data-size="1200x800" href="https://livedemo00.template-help.com/wt_62309/images/gallery/originals/gallery-3_original-1200x800.jpg">
+                        <figure><img src="Grid%20Gallery_files/gallery-grid-3-570x400.jpg" alt="" class="img-responsive" width="570" height="400">
+                        </figure></a>
+                    </div>
+                    <div data-filter="Type 2" class="col-xs-12 col-sm-6 col-md-4 isotope-item" style="position: absolute; left: 0px; top: 308px;"><a class="thumbnail-custom" data-photo-swipe-item="" data-size="1200x800" href="https://livedemo00.template-help.com/wt_62309/images/gallery/originals/gallery-4_original-1200x800.jpg">
+                        <figure><img src="Grid%20Gallery_files/gallery-grid-5-570x400.jpg" alt="" class="img-responsive" width="570" height="400">
+                        </figure></a>
+                    </div>
+                    <div data-filter="Type 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item" style="position: absolute; left: 426px; top: 308px;"><a class="thumbnail-custom" data-photo-swipe-item="" data-size="1200x775" href="https://livedemo00.template-help.com/wt_62309/images/gallery/originals/gallery-5_original-1200x800.jpg">
+                        <figure><img src="Grid%20Gallery_files/gallery-grid-6-570x400.jpg" alt="" class="img-responsive" width="570" height="400">
+                        </figure></a>
+                    </div>
+                    <div data-filter="Type 2" class="col-xs-12 col-sm-6 col-md-4 isotope-item" style="position: absolute; left: 852px; top: 308px;"><a class="thumbnail-custom" data-photo-swipe-item="" data-size="1200x800" href="https://livedemo00.template-help.com/wt_62309/images/gallery/originals/gallery-6_original-1200x800.jpg">
+                        <figure><img src="Grid%20Gallery_files/gallery-grid-4-570x400.jpg" alt="" class="img-responsive" width="570" height="400">
+                        </figure></a>
+                    </div>
+                    <div data-filter="Type 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item" style="position: absolute; left: 0px; top: 616px;"><a class="thumbnail-custom" data-photo-swipe-item="" data-size="1200x800" href="https://livedemo00.template-help.com/wt_62309/images/gallery/originals/gallery-7_original-1200x800.jpg">
+                        <figure><img src="Grid%20Gallery_files/gallery-grid-7-570x400.jpg" alt="" class="img-responsive" width="570" height="400">
+                        </figure></a>
+                    </div>
+                    <div data-filter="Type 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item" style="position: absolute; left: 426px; top: 616px;"><a class="thumbnail-custom" data-photo-swipe-item="" data-size="1200x800" href="https://livedemo00.template-help.com/wt_62309/images/gallery/originals/gallery-8_original-1200x800.jpg">
+                        <figure><img src="Grid%20Gallery_files/gallery-grid-8-570x400.jpg" alt="" class="img-responsive" width="570" height="400">
+                        </figure></a>
+                    </div>
+                    <div data-filter="Type 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item" style="position: absolute; left: 852px; top: 616px;"><a class="thumbnail-custom" data-photo-swipe-item="" data-size="1200x800" href="https://livedemo00.template-help.com/wt_62309/images/gallery/originals/gallery-9_original-1200x800.jpg">
+                        <figure><img src="Grid%20Gallery_files/gallery-grid-9-570x400.jpg" alt="" class="img-responsive" width="570" height="400">
+                        </figure></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Page Footer-->
+      <footer class="page-footer">
+        <div class="shell-fluid">
+          <div class="text-left section-90 section-lg-top-111 section-lg-bottom-110 context-dark">
+            <div class="range range-xs-center">
+              <div class="cell-xs-10 cell-sm-8 cell-md-8 cell-lg-4">
+                <div class="inset-md-right-36"><a href="https://livedemo00.template-help.com/wt_62309/index.html" class="brand"><img src="Grid%20Gallery_files/brand-logo-37x26.png" alt="" width="37" height="26">Joseph Parker</a>
+                  <p>Joseph Parker is a life-long innovator in politics 
+who built his career on delivering results through introducing reforms 
+and improvements for our society and economy. A former teacher and city 
+education department administrator, his main goal is to bring 
+considerable political, social, and economic improvements through 
+working with people who make the basis of our country. His 
+professionalism, dedication to what he does inspires the people around 
+him.</p>
+                  <h6 class="text-bold">Newsletter</h6>
+                  <hr class="divider">
+                  <p>Sign up to Joseph Parker’s newsletter and be the first to know about the latest news, special offers, and events.</p>
+                        <form data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php" class="rd-mailform" novalidate="novalidate">
+                          <div class="form-group">
+                            <div class="input-group input-group-sm">
+                              <input placeholder="Enter your e-mail" type="email" data-constraints="@Required @Email" name="email" class="form-control text-gray-darker form-control-has-validation" id="regula-generated-73805"><span class="form-validation"></span><span class="input-group-btn">
+                                <button type="submit" class="btn btn-sm btn-secondary">Subscribe</button></span>
+                            </div>
+                          </div>
+                        </form>
+                </div>
+              </div>
+              <div class="cell-xs-10 cell-sm-8 cell-md-8 cell-lg-4 offset-top-70 offset-lg-top-0">
+                <div class="inset-lg-left-15 inset-lg-right-30">
+                  <h6 class="text-bold">Recent Blog Posts</h6>
+                  <hr class="divider">
+                  <div class="post-mini unit unit-middle unit-horizontal post-widget unit-xs-top">
+                    <div class="unit-left"><a href="https://livedemo00.template-help.com/wt_62309/post-page.html"><img src="Grid%20Gallery_files/blog-1-160x120.jpg" alt="" class="img-responsive" width="160" height="120"></a></div>
+                    <div class="unit-body">
+                      <div class="post-meta"><span class="text-middle icon icon-sm-size-1 mdi mdi-calendar text-silver"></span>
+                        <time datetime="2017-04-30" class="text-middle post-meta-time text-italic reveal-inline"> 2 days ago</time>
+                      </div>
+                      <h6 class="text-bold"><a href="https://livedemo00.template-help.com/wt_62309/post-page.html">Understanding Education in America</a></h6>
+                    </div>
+                  </div>
+                  <div class="post-mini unit unit-middle unit-horizontal post-widget unit-xs-top">
+                    <div class="unit-left"><a href="https://livedemo00.template-help.com/wt_62309/post-page.html"><img src="Grid%20Gallery_files/blog-2-160x120.jpg" alt="" class="img-responsive" width="160" height="120"></a></div>
+                    <div class="unit-body">
+                      <div class="post-meta"><span class="text-middle icon icon-sm-size-1 mdi mdi-calendar text-silver"></span>
+                        <time datetime="2017-04-30" class="text-middle post-meta-time text-italic reveal-inline"> 2 days ago</time>
+                      </div>
+                      <h6 class="text-bold"><a href="https://livedemo00.template-help.com/wt_62309/post-page.html">Liberals Shouldn’t Fall Into the Right’s ‘Identity Politics’ Trap</a></h6>
+                    </div>
+                  </div>
+                  <div class="post-mini unit unit-middle unit-horizontal post-widget unit-xs-top">
+                    <div class="unit-left"><a href="https://livedemo00.template-help.com/wt_62309/post-page.html"><img src="Grid%20Gallery_files/blog-3-160x120.jpg" alt="" class="img-responsive" width="160" height="120"></a></div>
+                    <div class="unit-body">
+                      <div class="post-meta"><span class="text-middle icon icon-sm-size-1 mdi mdi-calendar text-silver"></span>
+                        <time datetime="2017-04-30" class="text-middle post-meta-time text-italic reveal-inline"> 2 days ago</time>
+                      </div>
+                      <h6 class="text-bold"><a href="https://livedemo00.template-help.com/wt_62309/post-page.html">Meet the Rightwing Power Players, Which Lurk Beneath Silicon Valley's Liberal Facade</a></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cell-xs-10 cell-sm-8 cell-md-8 cell-lg-4 offset-top-70 offset-lg-top-0">
+                <div class="inset-lg-left-30 inset-lg-right-30">
+                  <h6 class="text-bold">Contact Information</h6>
+                  <hr class="divider">
+                  <div class="unit unit-middle unit-horizontal unit-spacing-xs unit-xs-top">
+                    <div class="unit-left"><span class="icon icon-sm-size-1 mdi mdi-phone"></span></div>
+                    <div class="unit-body">
+                      <div class="text-bold">Phone Numbers</div>
+                      <div class="p offset-top-5"><a href="callto:#" class="text-alto">1-800-1234-567</a><span>, </span><a href="callto:#" class="text-alto">1-800-6547-321</a></div>
+                    </div>
+                  </div>
+                  <div class="unit unit-middle unit-horizontal unit-spacing-xs unit-xs-top offset-top-20">
+                    <div class="unit-left"><span class="icon icon-sm-size-1 mdi mdi-map-marker"></span></div>
+                    <div class="unit-body">
+                      <div class="text-bold">Office One</div>
+                      <div class="p offset-top-5"><a href="https://livedemo00.template-help.com/wt_62309/contacts.html" class="text-alto">2130 Fulton Street San Diego, CA 94117-1080 USA</a></div>
+                    </div>
+                  </div>
+                  <div class="unit unit-middle unit-horizontal unit-spacing-xs unit-xs-top offset-top-30">
+                    <div class="unit-left"><span class="icon icon-sm-size-1 mdi mdi-map-marker"></span></div>
+                    <div class="unit-body">
+                      <div class="text-bold">Office Two</div>
+                      <div class="p offset-top-5"><a href="https://livedemo00.template-help.com/wt_62309/contacts.html" class="text-alto">3214 Fulton Street San Francisco, CA 98451-2154 USA</a></div>
+                    </div>
+                  </div>
+                  <div class="unit unit-middle unit-horizontal unit-spacing-xs unit-xs-top offset-top-30">
+                    <div class="unit-left"><span class="icon icon-sm-size-1 mdi mdi-email-outline"></span></div>
+                    <div class="unit-body">
+                      <div class="text-bold">E-mail Addresses</div>
+                      <div class="p offset-top-5"><a href="mailto:#" class="text-secondary reveal-block">info@demolink.org</a><a href="mailto:#" class="text-secondary reveal-block">mail@demolink.org</a></div>
+                    </div>
+                  </div>
+                  <div class="offset-top-35">
+                          <ul class="list-inline">
+                            <li><a href="#" class="icon fa fa-facebook icon-circle icon-gray-light"></a></li>
+                            <li><a href="#" class="icon fa fa-twitter icon-circle icon-gray-light"></a></li>
+                            <li><a href="#" class="icon fa fa-google-plus icon-circle icon-gray-light"></a></li>
+                            <li><a href="#" class="icon fa fa-instagram icon-circle icon-gray-light"></a></li>
+                            <li><a href="#" class="icon fa fa-rss icon-circle icon-gray-light"></a></li>
+                          </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="range range-xs-center offset-top-0">
+            <div class="cell-sm-10 cell-md-10 cell-lg-12">
+              <hr>
+            </div>
+          </div>
+          <div class="range range-xs-center range-md-middle offset-top-0 section-40">
+            <div class="cell-xs-10 cell-md-12 cell-lg-9 text-lg-left">
+              <ul class="list-inline list-inline-lg footer-menu font-accent">
+                <li><a href="https://livedemo00.template-help.com/wt_62309/classic-blog.html">Blog</a></li>
+                <li><a href="https://livedemo00.template-help.com/wt_62309/programs.html">Program</a></li>
+                <li><a href="https://livedemo00.template-help.com/wt_62309/events.html">Events</a></li>
+                <li><a href="https://livedemo00.template-help.com/wt_62309/overview.html">About</a></li>
+                <li><a href="https://livedemo00.template-help.com/wt_62309/testimonials.html">Testimonials</a></li>
+                <li><a href="https://livedemo00.template-help.com/wt_62309/contacts.html">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="cell-xs-10 cell-md-12 cell-lg-3 tex-lg-right offset-top-15 offset-lg-top-0 text-lg-right">
+              <p class="text-gray-light-05">
+                Joseph Parker
+                ©<span id="copyright-year">2020</span>. <a href="https://livedemo00.template-help.com/wt_62309/terms-of-use.html" class="text-gray-light-05">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div id="form-output-global" class="snackbars"></div>
+    <!-- PhotoSwipe Gallery-->
+    <div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container" style="transform: translate3d(7555px, 0px, 0px);">
+          <div class="pswp__item" style="display: block; transform: translate3d(-7555px, 0px, 0px);"><div class="pswp__zoom-wrap" style="transform: translate3d(902px, -405px, 0px) scale(0.466431);"><img class="pswp__img" style="opacity: 1; width: 849px; height: 566px;" src="Grid%20Gallery_files/gallery-3_original-1200x800.jpg"></div></div>
+          <div class="pswp__item" style="transform: translate3d(-6044px, 0px, 0px);"><div class="pswp__zoom-wrap" style="transform: translate3d(250px, 44px, 0px) scale(1);"><img class="pswp__img" style="opacity: 1; width: 849px; height: 566px;" src="Grid%20Gallery_files/gallery-4_original-1200x800.jpg"></div></div>
+          <div class="pswp__item" style="display: block; transform: translate3d(-9066px, 0px, 0px);"><div class="pswp__zoom-wrap" style="transform: translate3d(250px, 44px, 0px) scale(1);"><img class="pswp__img" style="opacity: 1; width: 849px; height: 566px;" src="Grid%20Gallery_files/gallery-2_original-1200x800.jpg"></div></div>
+        </div>
+        <div class="pswp__ui pswp__ui--fit pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter">3 / 9</div>
+            <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+            <button title="Share" class="pswp__button pswp__button--share"></button>
+            <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+            <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+          <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__cent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Java script-->
+    <script src="Grid%20Gallery_files/core.js"></script>
+    <script src="Grid%20Gallery_files/script.js"></script>
+  <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
+<a href="#" id="ui-to-top" class="ui-to-top fa fa-angle-up active"></a><script type="text/javascript" id="">(function(){var b=document.location.search.split("aff\x3d")[1];if(b){var d=document.querySelectorAll("a"),c;for(c=0;c<d.length;c++){var a=d[c];0==a.href.indexOf("https://www.templatemonster.com")&&(0<a.href.indexOf("?")?a.href=a.href+"\x26aff\x3d"+b:a.href=a.href+"?aff\x3d"+b)}}b=document.location.search.split("i\x3d")[1];var e=document.location.search.split("pr_code\x3d")[1];if(b&&e)for(b=b.split("\x26")[0],d=document.querySelectorAll("a"),c=0;c<d.length;c++)a=d[c],0==a.href.indexOf("https://www.templatemonster.com")&&
+(a.href="https://www.templatehelp.com/preset/cart.php?act\x3dadd\x26templ\x3d"+b+"\x26pr_code\x3d"+e)})();</script>
+</body></html>
